@@ -7,5 +7,5 @@ app.use(express.json())
 app.use(playerDetails)
 
 app.listen(PORT, () => {
-    console.log("running successfully in Port: " + PORT)
+    console.log("running successfully in Port: "+ PORT)
 });
