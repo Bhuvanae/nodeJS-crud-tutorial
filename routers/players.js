@@ -37,7 +37,7 @@ router.delete('/players', (req, res) => {
   })
 })
 router.put('/players', (req, res) => {
-  Player.update({ name: "Shivam" }, { $set: { name: "Shivam D" } }, (err, obj) => {
+  Player.update({ name: "Shivam D" }, { $set: { name: "Shivam" } }, (err, obj) => {
     if (err) {
       return console.log("something happened")
     }
