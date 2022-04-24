@@ -5,7 +5,7 @@ const app = express()
 const dateValue = require('../utils/dateFunction')
 
 router.get('/players', (req, res) => {
-  Player.find({date:"Sat Apr "},(err, obj) => {
+  Player.find((err, obj) => {
     if (err) {
       return console.log("something hap[pened")
     }
