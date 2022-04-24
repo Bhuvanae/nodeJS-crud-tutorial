@@ -4,8 +4,9 @@ const router = express.Router()
 const app = express()
 const dateValue = require('../utils/dateFunction')
 
-router.get('/players', (req, res) => {
-  Player.find((err, obj) => {
+router.get('/players/:date', (req, res) => {
+  fetchDate = req.body.date
+  Player.find({date:fetchDate},(err, obj) => {
     if (err) {
       return console.log("something hap[pened")
     }
